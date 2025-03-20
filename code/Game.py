@@ -2,23 +2,26 @@
 #-*- Coding: uft-8 -*-
 
 import pygame
+
+from code.Menu import Menu
+
+
 class Game:
     def __init__(self):
-        self.window = None
+        pygame.init()
+        self.window = pygame.display.set_mode(size=(600, 480))
 
 
     def run(self, ):
-        print('Setup Start')
-        pygame.init()
-        window = pygame.display.set_mode(size=(600, 480))
-        print('Setup End')
-
-        print('Loop Start')
         while True:
+            menu = Menu(self.window)
+            menu.run()
+            pass
+
             # Check for all events
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    pygame.quit()  # Close window
-                    quit()  # end pygame
+            #for event in pygame.event.get():
+            #   if event.type == pygame.QUIT:
+            #       pygame.quit()  # Close window
+            #       quit()  # end pygame
 
     pass
