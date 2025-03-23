@@ -5,7 +5,7 @@ import pygame.image
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from code.const import WIN_WIDTH, C_PURPLE, C_WHITE, MENU_OPTION
+from code.const import WIN_WIDTH, C_PURPLE, MENU_OPTION, C_WHITE
 
 
 class Menu:
@@ -16,14 +16,13 @@ class Menu:
 
     def run(self):
         menu_option = 0
-        pygame.mixer_music.load('./assent/menu.wav')
+        pygame.mixer_music.load('./asset/sound.wav')
         pygame.mixer_music.play(-1)
-
         while True:
             # DRAW IMAGES
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(30, "War in the", C_PURPLE, ((WIN_WIDTH / 2), 70))
-            self.menu_text(50, "Clouds", C_PURPLE, ((WIN_WIDTH / 2), 120))
+            self.menu_text(50, "WAN in the", C_PURPLE, ((WIN_WIDTH / 2), 70))
+            self.menu_text(50, "CLOUDS", C_PURPLE, ((WIN_WIDTH / 2), 120))
 
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
