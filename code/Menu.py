@@ -21,7 +21,7 @@ class Menu:
         while True:
             # DRAW IMAGES
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(50, "WAN in the", C_PURPLE, ((WIN_WIDTH / 2), 70))
+            self.menu_text(50, "WAN IN THE", C_PURPLE, ((WIN_WIDTH / 2), 70))
             self.menu_text(50, "CLOUDS", C_PURPLE, ((WIN_WIDTH / 2), 120))
 
             for i in range(len(MENU_OPTION)):
