@@ -5,18 +5,18 @@ import pygame.image
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from code.const import WIN_WIDTH, C_PURPLE, MENU_OPTION, C_WHITE
+from code.Const import WIN_WIDTH, C_PURPLE, MENU_OPTION, C_WHITE
 
 
 class Menu:
     def __init__(self, window):
         self.window = window
-        self.surf = pygame.image.load('./asset/menu.png').convert_alpha()
+        self.surf = pygame.image.load('./asset/Menu.png').convert_alpha()
         self.rect = self.surf.get_rect(left=0, top=0)
 
     def run(self):
         menu_option = 0
-        pygame.mixer_music.load('./asset/sound.wav')
+        pygame.mixer_music.load('./asset/Sound.wav')
         pygame.mixer_music.play(-1)
         while True:
             # DRAW IMAGES
