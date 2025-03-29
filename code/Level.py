@@ -7,15 +7,6 @@ import pygame
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from code.Const import C_WHITE, C_CYAN, C_GREEN, WIN_HEIGHT, MENU_OPTION, EVENT_ENEMY, SPAWN_TIME, EVENT_TIMEOUT, TIMEOUT_STEP, TIMEOUT_LEVEL
-from code.Enemy import Enemy
-from code.Entity import Entity
-from code.EntityFactory import EntityFactory
-from code.EntityMediator import EntityMediator
-from code.Player import Player
-
-
-
 class Level:
 
     def __init__(self, window: Surface, name: str, game_mode: str, player_score: list[int]):

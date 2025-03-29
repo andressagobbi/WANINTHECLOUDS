@@ -98,11 +98,11 @@ ENTITY_SHOT_DELAY = {
 }
 
 # M
-MENU_OPTION = ('NEW GAME 1P',
-               'NEW GAME 2P - COOPERATIVE',
-               'NEW GAME 2P - COMPETITIVE',
-               'SCORE',
-               'EXIT')
+MENU_OPTION = ('New Adventure - 1 Player',
+               'New Adventure - 2 Players (Cooperative)',
+               'New Adventure - 2 Players (Competitive)',
+               'Score',
+               'Exit')
 
 # P
 PLAYER_KEY_UP = {'Player1': pygame.K_UP,
