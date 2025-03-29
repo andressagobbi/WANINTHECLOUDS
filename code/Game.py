@@ -9,6 +9,7 @@ from code.Level import Level
 from code.Menu import Menu
 from code.Score import Score
 
+
 class Game:
     def __init__(self):
         pygame.init()
